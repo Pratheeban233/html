@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<title> Table</title>
+</head>
+<style>
+       table{border:1px solid blue; border-collapse:collapse;
+	         outline:2px solid blue;
+			 outline-offset:2px;
+			 }
+	   td,th{ 
+	   border:1px solid red; 
+	  /* padding:10px; */
+	  width:200px;
+      height:80px;
+	 text-align:center; 
+	  vertical-align:middle;  
+	  /* top, bottom */
+	  
+	   }
+	   
+	   /* tr:nth-child(2){background-color:pink;} */
+	   /*  tr:nth-child(odd){background-color:gray;} */
+	   
+	   #td2{background-color:green;}
+	   col:nth-child(even){background-color:pink;}
+	   col:nth-child(odd){background-color:orange;}
+</style>
+
+<body>
+
+      <table >
+	          <colgroup>
+			      <col style="">
+			      <col span="2" style="">
+				  <col >
+			  
+			  </colgroup>
+	         <tr> <th>Sl.No </th><th>Name </th><th> Age </th></tr>
+	         <tr> <td colspan="2" id="td2" >1 </td>   <!-- <td>Anbu </td> --> <td>22 </td></tr>
+	         <tr> <td>2 </td>    <td>Ragul </td><td rowspan="2" >24 </td></tr>
+	         <tr> <td>3 </td>	 <td>Karthik </td> <!-- <td>24 </td> -->  </tr>
+	  </table>
+
+
+</body>
+
+
+
+</html>
+
