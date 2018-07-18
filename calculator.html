@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<style>
+#ii{background-color:red;}
+#a1{background-color:yellow;}
+#a2{background-color:red;}
+#a3{background-color:pink;}
+#a4{background-color:pink;}
+#a5{background-color:yellow;}
+#a6{background-color:red;}
+#a7{background-color:blue;}
+#a8{background-color:orange;}
+#a9{background-color:pink;}
+#a0{background-color:yellow;}
+#add{background-color:red;}
+#sub{background-color:blue;}
+#mul{background-color:orange;}
+#div{background-color:yellow;}
+#equal{background-color:blue;}
+#del{background-color:orange;}
+</style>
+<body>
+<input id="ii" style=color:white;></input>
+<br><br>
+<button id="a1" onclick="myb1()">1</button>
+<button id="a2" onclick="myb2()">2</button>
+<button id="a3" onclick="myb3()">3</button>
+<button id="sub" onclick="sub()">-</button>
+
+<br><br>
+<button id="a4" onclick="myb4()">4</button>
+<button id="a5" onclick="myb5()">5</button>
+<button id="a6" onclick="myb6()">6</button>
+<button id="mul" onclick="mul()">*</button>
+
+<br><br>
+<button id="a7" onclick="myb7()">7</button>
+<button id="a8" onclick="myb8()">8</button>
+<button id="a9" onclick="myb9()">9</button>
+<button id="div" onclick="div()">/</button>
+
+<br><br>
+<button id="a0" onclick="myb0()">0</button>
+<button id="add" onclick="add()">+</button>
+<button id="equal" onclick="equal()">=</button>
+<button id="del" onclick="del()">del</button>
+
+<script>
+function myb1()
+{
+x=document.getElementById("a1").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb2()
+{
+x=document.getElementById("a2").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb3()
+{
+x=document.getElementById("a3").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb4()
+{
+x=document.getElementById("a4").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb5()
+{
+x=document.getElementById("a5").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb6()
+{
+x=document.getElementById("a6").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb7()
+{
+x=document.getElementById("a7").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb8()
+{
+x=document.getElementById("a8").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb9()
+{
+x=document.getElementById("a9").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function myb0()
+{
+x=document.getElementById("a0").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function add()
+{
+x=document.getElementById("add").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function sub()
+{
+x=document.getElementById("sub").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function mul()
+{
+x=document.getElementById("mul").innerHTML;
+document.getElementById("ii").value+=x;
+}
+function div()
+{
+x=document.getElementById("div").innerHTML;
+document.getElementById("ii").value+=x;
+}
+
+function equal()
+{
+x=document.getElementById("ii").value;
+m=eval(x)
+document.getElementById("ii").value=m;
+}
+function del()
+{
+x=document.getElementById("del").value;
+document.getElementById("ii").value=x;
+}
+</script>
+</body>
+</html>
